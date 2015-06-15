@@ -1,0 +1,11 @@
+<h1>{{model.name}} ({{model.karma}})</h1>
+
+<ul>
+  {{#each link in model.links}}
+    <li>
+      <a target="_blank" href="{{unbound link.url}}"> {{link.title}} </a>
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

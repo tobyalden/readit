@@ -3,7 +3,7 @@ import DS from 'ember-data';
 var attr = DS.attr;
 
 export default DS.Model.extend({
-  title: attr('string'),
-  url: attr('string'),
-  user: DS.belongsTo('user')
+  name: attr('string'),
+  karma: attr('number'),
+  links: DS.hasMany('link')
 });
